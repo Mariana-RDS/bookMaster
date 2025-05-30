@@ -28,4 +28,26 @@ public class helloController {
         return ("hello, " + nome +" "+ sobrenome);
     }
 
+
+    // Request utilizando json
+/*
+ *     Json para requisição
+ * [
+        {
+            "titulo": "Mistborn",
+            "autor": "Brandon Sanderson",
+            "editora": "Trama",
+            "paginas": 716,
+            "ISBN": "6581339180"
+        }
+    ]
+ */
+
+
+    @PostMapping("cadastro")
+    public void cadastroLivro(@RequestBody String livroJson){
+        System.out.println(livroJson);
+
+    }
+
 }
