@@ -50,4 +50,10 @@ public class helloController {
 
     }
 
+    // passando com objeto
+    @GetMapping("usuario")
+    public String usuario(@RequestBody usuarioEntity usuario) {
+        return "Nome: " + usuario.getNome() + " Sobrenome: " + usuario.getSobrenome();
+    }
+
 }
