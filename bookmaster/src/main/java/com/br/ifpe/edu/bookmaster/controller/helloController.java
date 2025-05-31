@@ -1,6 +1,7 @@
 package com.br.ifpe.edu.bookmaster.controller;
 
 import org.springframework.web.bind.annotation.*;
+import com.br.ifpe.edu.bookmaster.entity.usuarioEntity;
 
 @RestController
 @RequestMapping("/api")
