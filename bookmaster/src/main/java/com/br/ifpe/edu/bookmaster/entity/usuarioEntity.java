@@ -1,7 +1,15 @@
 package com.br.ifpe.edu.bookmaster.entity;
 
+
+import java.util.UUID;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class usuarioEntity {
     
+    @Id
+    private UUID id;
     private String nome;
     private String sobrenome;
 
